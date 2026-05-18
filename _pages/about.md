@@ -20,15 +20,7 @@ redirect_from:
 我是目前将要读于北京大学力学与工程科学学院的一名博士研究生。
  <a href='https://scholar.google.com/citations?user=WMkMTb4AAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=引用"></a>。
 
-我的研究领域包括：
-- 仪器仪表
-- 机械工程
-- 电磁无损检测
-- 漏磁检测
-- 涡流检测
-- 磁传感器
-- 无损检测装备开发
-  
+
 
 
 <span class='anchor' id='-xl'></span>
