@@ -3,7 +3,7 @@ permalink: /experience/
 title: "Experience"
 author_profile: true
 ---
-## Experience
+# Experience
 
 <div class="list__item">
   <article class="archive__item">
@@ -19,15 +19,16 @@ author_profile: true
     <h2 class="archive__item-title">
       <a href="https://coe.pku.edu.cn" target="_blank">Ph.D. Student in Solid Mechanics (2026 - Present)</a>
     </h2>
-    <p>Department of Mechanics, College of Engineering, Peking University. Advisor: Prof. XXX</p>
+    <p>
+      </p>
   </article>
 </div>
 
 <div class="list__item">
   <article class="archive__item">
     <h2 class="archive__item-title">
-      <span>Research Assistant (2025 - 2026)</span>
+      <span>test</span>
     </h2>
-    <p>Advanced Materials Simulation Group. Conducted multi-scale defect structure visualization via OVITO.</p>
+    <p>test</p>
   </article>
 </div>
