@@ -15,7 +15,11 @@ redirect_from:
 {% endif %}
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 
-<span class='anchor' id='about-me'></span>
+# Yuliao Gu 
 
-我是目前将要读于北京大学力学与工程科学学院的一名博士研究生。
+I am an student, majoring in theoratical and applied mechanics, at the Department of Aeronautics and Astronautics, Fudan University.
+
+My personal homepage mainly focuses on my academic career and daily life. I hope these things can help you learn more about me.
+
+
  
