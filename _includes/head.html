@@ -17,3 +17,29 @@
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 
 <meta http-equiv="cleartype" content="on">
+
+<style>
+  /* 1. 调整所有导航链接的字体、间距和颜色 */
+  .masthead__menu-item a {
+    /* 使用极其接近目标主页的现代无衬线字体栈 */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+    font-size: 17px !important;            /* 调大字号 */
+    color: #6a7b8c !important;             /* 替换为张寅老师主页那种优雅的灰蓝色 */
+    padding: 0.5rem 1.5rem !important;     /* 增加左右间距 (1.5rem)，让排版大幅舒展开来 */
+    font-weight: 500 !important;           /* 让字体比默认稍微饱满一点点 */
+    letter-spacing: 0.2px;                 /* 微微增加字母间距 */
+  }
+
+  /* 2. 鼠标悬停时的交互效果 */
+  .masthead__menu-item a:hover {
+    color: #3b4a59 !important;             /* 鼠标悬停时颜色变深 */
+    text-decoration: none !important;
+  }
+
+  /* 3. 模仿目标主页，将第一个导航项（Homepage）加粗并稍微调大，作为 Logo 锚点 */
+  .masthead__menu-item:first-child a {
+    font-weight: 700 !important;           /* 显著加粗 */
+    color: #5a6c7d !important;             /* 颜色略深一点 */
+    font-size: 18px !important;            /* 字号略大一点 */
+  }
+</style>
