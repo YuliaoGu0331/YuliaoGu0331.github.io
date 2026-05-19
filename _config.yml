@@ -6,8 +6,8 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "顾宇辽"
-description              : "力学"
+title                    : "Yuliao Gu"
+description              : "Solid Mechanics"
 repository               : "YuliaoGu0331/YuliaoGu0331.github.io"
 google_scholar_stats_use_cdn : false
 
@@ -21,10 +21,10 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 
 # Site Author
 author:
-  name             : "顾宇辽"
+  name             : "Yuliao Gu"
   avatar           : "/images/android-chrome-512x512.png"
-  bio              : "复旦大学"
-  location         : "上海"
+  bio              : "Fudan University"
+  location         : "Shanghai, China"
   employer         : #"Hefei General Machinery Research Institute"
   pubmed           : 
   googlescholar    : 
