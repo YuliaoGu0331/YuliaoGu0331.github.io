@@ -65,3 +65,7 @@ AcadHomepage
 - AcadHomepage incorporates Font Awesome, which is distributed under the terms of the SIL OFL 1.1 and MIT License.
 - AcadHomepage is influenced by the github repo [mmistakes/minimal-mistakes](https://github.com/mmistakes/minimal-mistakes), which is distributed under the MIT License.
 - AcadHomepage is influenced by the github repo [academicpages/academicpages.github.io](https://github.com/academicpages/academicpages.github.io), which is distributed under the MIT License.
+
+# Supplements
+
+基于原作者的模板进行了些额外的修改，主要使用的AI工具为Gemini，修改仅供参考，可按个人喜好保留。感谢RayeRen和tangjyan的分享与贡献。
