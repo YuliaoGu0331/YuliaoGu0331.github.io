@@ -24,7 +24,7 @@
     /* 使用极其接近目标主页的现代无衬线字体栈 */
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
     font-size: 17px !important;            /* 调大字号 */
-    color: #6a7b8c !important;             /* 替换为张寅老师主页那种优雅的灰蓝色 */
+    color: #6a7b8c !important;             /* 替换为优雅的灰蓝色 */
     padding: 0.5rem 1.5rem !important;     /* 增加左右间距 (1.5rem)，让排版大幅舒展开来 */
     font-weight: 500 !important;           /* 让字体比默认稍微饱满一点点 */
     letter-spacing: 0.2px;                 /* 微微增加字母间距 */
@@ -41,5 +41,57 @@
     font-weight: 700 !important;           /* 显著加粗 */
     color: #5a6c7d !important;             /* 颜色略深一点 */
     font-size: 18px !important;            /* 字号略大一点 */
+  }
+
+  /* ================= 侧边栏专属美化 ================= */
+  
+  /* 1. 统一侧边栏的字体，与顶部导航栏保持一致的高级感 */
+  .sidebar {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+  }
+
+  /* 2. 姓名：加粗、颜色调深 */
+  .author__name {
+    font-weight: 700 !important;
+    color: #494e52 !important;
+    margin-bottom: 15px !important;
+  }
+
+  /* 3. 个人简介 (Bio)：改为左对齐，调整行距，去掉居中 */
+  .author__bio {
+    text-align: left !important;
+    color: #494e52 !important;
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+    margin-bottom: 25px !important;
+    padding: 0 5px !important; /* 与下方的图标对齐 */
+  }
+
+  /* 4. 社交图标列表外框：清除多余缩进 */
+  .author__urls {
+    padding: 0 5px !important;
+  }
+
+  /* 5. 社交图标单行：使用 Flex 布局完美垂直居中，拉开行距 */
+  .author__urls li {
+    font-size: 15px !important;
+    color: #494e52 !important;
+    margin-bottom: 12px !important; 
+    display: flex !important;
+    align-items: center !important;
+  }
+
+  /* 6. 超链接文字颜色 */
+  .author__urls li a {
+    color: #494e52 !important;
+    text-decoration: none !important;
+  }
+
+  /* 7. 小图标：固定宽度，让右侧的文字能够像表格一样垂直对齐 */
+  .author__urls li i {
+    color: #24292e !important; /* 图标颜色更深一点 */
+    width: 24px !important;    /* 固定宽度是文字对齐的秘诀 */
+    text-align: left !important;
+    font-size: 16px !important;
   }
 </style>
