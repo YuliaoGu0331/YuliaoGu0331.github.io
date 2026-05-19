@@ -1,5 +1,5 @@
 main:
-  - title: "Home"
+  - title: "Homepape"
     url: /
   - title: "Education"
     url: /education/
@@ -7,7 +7,7 @@ main:
     url: /research/
   - title: "Publications"
     url: /publications/
-  - title: "Honors & Awards"
+  - title: "Honors And Awards"
     url: /awards/
-  - title: "Experience & Comments"      # 将学术会议和工作实习整合到这里
+  - title: "Experience And Comments"      # 将学术会议和工作实习整合到这里
     url: /experience/
