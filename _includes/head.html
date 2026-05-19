@@ -155,4 +155,43 @@
   .page__content {
     padding-right: 12% !important; 
   }
+
+  /* ================= 全局列表条目（Teaching & Experience）统一美化 ================= */
+  
+  /* 1. 统一条目外框间距 */
+  .list__item {
+    margin-bottom: 24px !important;
+    text-align: left !important;
+  }
+
+  /* 2. 统一标题字号与颜色（张寅老师同款浅蓝色） */
+  .archive__item-title {
+    font-size: 19.5px !important;    /* 放大标题字号 */
+    font-weight: 600 !important;
+    margin-top: 0 !important;
+    margin-bottom: 4px !important;
+  }
+  
+  .archive__item-title a {
+    color: #5aa1c2 !important;       /* 浅蓝色超链接 */
+    text-decoration: none !important;
+  }
+  
+  .archive__item-title a:hover {
+    text-decoration: underline !important;
+  }
+
+  /* 3. 统一第二行辅助说明文字（作者、日期、具体描述）的字号与柔和配色 */
+  .archive__item p, .archive__item li {
+    font-size: 14.5px !important;
+    color: #5a6570 !important;       /* 灰蓝色小字 */
+    line-height: 1.5 !important;
+    margin: 0 !important;
+  }
+
+  /* 4. 如果你在描述里用了 <ul> <li> 列表，收紧其缩进 */
+  .archive__item ul {
+    margin: 4px 0 0 0 !important;
+    padding-left: 20px !important;
+  }
 </style>
