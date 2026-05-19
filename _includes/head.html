@@ -138,4 +138,21 @@
     text-decoration: underline !important;
     color: #3d7a99 !important;
   }
+
+  /* ================= 页面整体布局优化 ================= */
+  
+  /* 移除原模板为“右侧目录”强制预留的大块空白空间 */
+  .page {
+    padding-right: 0 !important; 
+  }
+  
+  /* 确保内部容器宽度可以舒展开来 */
+  .page__inner-wrap {
+    max-width: 100% !important;
+  }
+  
+  /* 释放正文右侧边距，稍微留一点呼吸空间（比如 20px）即可 */
+  .page__content {
+    padding-right: 20px !important; 
+  }
 </style>
