@@ -139,6 +139,37 @@
     color: #3d7a99 !important;
   }
 
+  /* ================= 详情页内容细节美化 ================= */
+  
+  /* 1. 让 <hr /> 分割线变成浅灰色，不要太黑，保持优雅 */
+  .page__content hr {
+    border: 0 !important;
+    border-top: 1px solid #eaeaea !important;
+    margin: 1.5em 0 !important;
+  }
+
+  /* 2. 行内小代码块高亮（如张寅老师代码里的 Whole document 效果） */
+  .page__content code {
+    background-color: #f8f9fa !important;
+    border: 1px solid #e9ecef !important;
+    color: #e83e8c !important; /* 经典且醒目的学术粉红色/深红色 */
+    padding: 2px 6px !important;
+    border-radius: 4px !important;
+    font-family: Consolas, monospace !important;
+    font-size: 90% !important;
+  }
+
+  /* 3. 增强有序列表（1. 2. 3.）和无序列表（•）的学术阅读体验 */
+  .page__content ol, .page__content ul {
+    color: #333333 !important;
+    font-size: 16.5px !important;
+    line-height: 1.7 !important;
+    padding-left: 24px !important;
+  }
+  .page__content li {
+    margin-bottom: 6px !important; /* 让列表项之间有点呼吸感 */
+  }
+
   /* ================= 页面整体布局优化 ================= */
   
   /* 移除原模板为“右侧目录”强制预留的大块空白空间 */
