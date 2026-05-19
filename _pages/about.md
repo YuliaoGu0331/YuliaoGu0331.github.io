@@ -20,5 +20,8 @@ I am a student, majoring in theoratical and applied mechanics, at the Department
 
 My personal homepage mainly focuses on my academic career and daily life. I hope these things can help you learn more about me.
 
+# Education
+B.S. (2022-2026) in Theoratical and Applied Mechanics from Fudan University
+
 
  
