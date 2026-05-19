@@ -2,7 +2,6 @@
 permalink: /
 title: ""
 excerpt: ""
-lang: "zh"
 author_profile: true
 redirect_from: 
   - /about/
