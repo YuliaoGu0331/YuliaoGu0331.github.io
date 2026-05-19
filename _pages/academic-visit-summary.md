@@ -6,7 +6,6 @@ author_profile: true
 
 # 学术访问与联合研究总结 (2026.04)
 
-<hr />
 
 ### Q1：本次学术访问的核心任务和交流地点是什么？
 
@@ -41,3 +40,35 @@ author_profile: true
 **A：** 预计在下个季度完成论文的初稿撰写。主要计划包含以下两点：
 * 进一步完善基于机器学习势函数（MLP）的高熵合金高温高压状态方程描述。
 * 联合撰写并整理本次模拟的核心数据，预计于今年下半年提交学术论文初稿。
+
+### Q1：在服务器上联合调试 LAMMPS 脚本时，如何批量修复势函数报错？
+
+**A：** 这是由于多组分 EAM 势函数在并行计算时未被所有节点正确读取导致的。在更新集群环境配置时，可以通过检查行内高亮代码 <code class="language-plaintext highlighter-rouge">potential.eam.alloy</code> 来定位问题。
+
+下面是我们现场优化后的标准 **LAMMPS 冲击模拟（Shock Simulations）输入流脚本文件** 完整代码：
+
+<div class="custom-code-box">
+# ----------------- LAMMPS INPUT SCRIPT FOR HEA SHOCK -----------------
+units           metal
+boundary        p p p
+atom_style      atomic
+
+# 1. 结构初始化与读取
+read_data       data.pos
+scale           1.0
+
+# 2. 高熵合金多组分势函数定义 (CoCrFeMnNi Cantor Alloy)
+pair_style      eam/alloy
+pair_coeff      * * potential.eam.alloy Co Cr Fe Mn Ni
+
+# 3. 热力学弛豫控制 (NPT Ensemble at 300 K)
+thermo          1000
+thermo_style    custom step temp pe ke etotal press vol
+fix             1 all npt temp 300.0 300.0 0.1 iso 0.0 0.0 1.0
+
+# 4. 运行模拟
+timestep        0.001
+run             50000
+</div>
+
+对于上述脚本，确保潜在的配置文件已放置在当前的临时工作目录下，否则节点在初始化时会弹出加载失败的警告。
