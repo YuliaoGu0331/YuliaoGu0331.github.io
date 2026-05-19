@@ -16,8 +16,7 @@ redirect_from:
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 
 # Yuliao Gu 
-
-I am an student, majoring in theoratical and applied mechanics, at the Department of Aeronautics and Astronautics, Fudan University.
+I am a student, majoring in theoratical and applied mechanics, at the Department of Aeronautics and Astronautics, Fudan University.
 
 My personal homepage mainly focuses on my academic career and daily life. I hope these things can help you learn more about me.
 
