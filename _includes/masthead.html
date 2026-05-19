@@ -6,15 +6,13 @@
         <ul class="visible-links">
           <li class="masthead__menu-item masthead__menu-item--lg masthead__menu-home-item">
             {% if page.lang == 'en' %}
-              <!-- 英文页面显示：中文按钮 + 中文图标 + 指向中文主页 -->
               <a href="/" target="_self">
-                <img class="svg" src="/images/zh.svg" width="20pt"> 
+                <img class="svg" src="/images/zh.svg" width="20pt" onerror="this.style.display='none'">
                 中文
               </a>
             {% else %}
-              <!-- 中文页面显示：English按钮 + 英文图标 + 指向英文页面 -->
-              <a href="/en/" target="_self">
-                <img class="svg" src="/images/en.svg" width="20pt"> 
+              <a href="/en/" target="_self"></a>
+                <img class="svg" src="/images/en.svg" width="20pt" onerror="this.style.display='none'">
                 English
               </a>
             {% endif %}
