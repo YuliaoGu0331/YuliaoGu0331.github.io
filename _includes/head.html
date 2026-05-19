@@ -120,6 +120,14 @@
     font-size: 22px !important;
   }
 
+    .page__content h3 {
+    border-bottom: none !important; /* 极浅的灰色下划线 */
+    padding-bottom: 0 !important;
+    margin-top: 1em !important;
+    margin-bottom: 0.5em !important;
+    font-size: 18px !important;
+  }
+
   /* 3. 正文字体、行高和对齐方式调整 */
   .page__content p {
     color: #5a6570 !important;     /* 舒适的深灰蓝色正文 */
@@ -224,5 +232,35 @@
   .archive__item ul {
     margin: 4px 0 0 0 !important;
     padding-left: 20px !important;
+  }
+
+  .custom-code-box {
+    background-color: #f8f9fa !important;
+    border: 1px solid #e9ecef !important;
+    border-radius: 4px !important;
+    padding: 16px 22px !important;
+    position: relative !important;
+    margin: 18px 0 !important;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace !important;
+    font-size: 14px !important;
+    color: #24292e !important;
+    line-height: 1.5 !important;
+    
+    /* === 新增：支持超长代码的横向滚动，防止长脚本强行换行错位 === */
+    overflow-x: auto !important;
+    white-space: pre !important;  /* 保持代码的原始缩进与换行，不需要狂写 <br> */
+  }
+  
+  /* 代码框右侧的 </> 装饰符号 */
+  .custom-code-box::after {
+    content: "</>" !important;
+    position: absolute !important;
+    top: 14px !important;
+    right: 18px !important;
+    color: #6c757d !important;
+    font-weight: 600 !important;
+    font-family: -apple-system, sans-serif !important;
+    font-size: 13px !important;
+    opacity: 0.6;
   }
 </style>
