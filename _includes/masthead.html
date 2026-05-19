@@ -4,21 +4,8 @@
       <nav id="site-nav" class="greedy-nav">
         <button><div class="navicon"></div></button>
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg masthead__menu-home-item">
-            {% if page.lang == 'en' %}
-              <a href="/" target="_self">
-                <img class="svg" src="{{ '/images/cn.svg' | relative_url }}" width="20pt" onerror="this.style.display='none'">
-                中文
-              </a>
-            {% else %}
-              <a href="/en/" target="_self">
-                <img class="svg" src="{{ '/images/en.svg' | relative_url }}" width="20pt" onerror="this.style.display='none'">
-                English
-              </a>
-            {% endif %}
-          </li>
           {% for link in site.data.navigation.main %}
-            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url | relative_url }}">{{ link.title }}</a></li>
           {% endfor %}
         </ul>
         <ul class="hidden-links hidden"></ul>
