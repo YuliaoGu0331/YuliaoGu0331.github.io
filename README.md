@@ -1,71 +1,243 @@
+# Yuliao Gu Academic Homepage
 
-<h1 align="center">
-AcadHomepage
-</h1>
+[![Website](https://img.shields.io/badge/website-online-176b62)](https://yuliaogu0331.github.io)
+[![GitHub Pages](https://img.shields.io/badge/deployment-GitHub%20Pages-222222?logo=github)](https://github.com/YuliaoGu0331/YuliaoGu0331.github.io)
+[![License](https://img.shields.io/badge/license-MIT-c55a35)](LICENSE)
 
-<div align="center">
+这是 Yuliao Gu 的个人学术主页源码，基于 Jekyll 和 GitHub Pages 构建。当前版本在 [AcadHomepage](https://github.com/RayeRen/acad-homepage.github.io) 的基础上重新设计了页面结构、视觉系统和前端运行方式，主要用于展示个人简介、研究方向、论文、荣誉、经历与笔记。
 
-[![](https://img.shields.io/github/stars/RayeRen/acad-homepage.github.io)](https://github.com/RayeRen/acad-homepage.github.io)
-[![](https://img.shields.io/github/forks/RayeRen/acad-homepage.github.io)](https://github.com/RayeRen/acad-homepage.github.io)
-[![](https://img.shields.io/github/issues/RayeRen/acad-homepage.github.io)](https://github.com/RayeRen/acad-homepage.github.io)
-[![](https://img.shields.io/github/license/RayeRen/acad-homepage.github.io)](https://github.com/RayeRen/acad-homepage.github.io/blob/main/LICENSE)  | [English README](./docs/README-en.md) 
+- 在线主页：<https://yuliaogu0331.github.io>
+- 默认语言：英文
+- 部署分支：`master`
 
-</div>
+## 当前版本特色
 
-<p align="center">一个现代、响应式的个人学术主页</p>
+### 学术信息优先的首页
 
+首页按照“个人身份、研究兴趣、教育背景”的顺序组织内容，让访客可以快速理解研究方向和学术经历。论文、荣誉等尚无内容的页面使用明确的空状态，不展示虚构或示例数据。
 
-<p align="center">
-    <br>
-    <img src="docs/screenshot.png" width="100%"/>
-    <br>
-</p>
+### 清晰、响应式的视觉系统
 
-一些例子：
-- [样例页面](https://rayeren.github.io/acad-homepage.github.io/)
-- [作者的个人主页](https://rayeren.github.io/)
+- 桌面端采用个人资料侧栏与正文双栏布局。
+- 平板和移动端自动切换为单栏结构。
+- 移动导航支持点击外部关闭、`Esc` 关闭和正确的 ARIA 状态。
+- 支持键盘焦点样式、语义化 HTML 和减少动态效果的系统偏好。
+- 使用白色背景、深色正文、青绿色链接和暖色强调，适合长时间阅读。
 
-## 主要特点
-- **自动更新谷歌学术引用**: 借助谷歌学术爬虫和github action功能，本仓库可以自动更新作者的引用数和论文引用数。
-- **支持谷歌Analytics**: 你可以通过简单的配置来实现使用谷歌Analytics跟踪网页的流量。
-- **响应式的**: 此主页会针对不同的屏幕尺寸自动调整布局。
-- **美观而简约**: 此主页美观而简约，适合个人学术主页的搭建。
-- **搜索引擎优化**: 搜索引擎优化 (SEO) 帮助搜索引擎轻松找到您在主页上发布的信息，然后将其与类似网站进行排名，并获得排名优势。
+### 数据驱动的个人资料
 
-## 快速开始
+个人信息维护在 `_config.yml`，链接类型维护在 `_data/profile_links.yml`。作者资料模板通过一个 Liquid 循环生成联系方式，不需要为桌面端和移动端维护两份重复 HTML。
 
-1. Fork本仓库到`USERNAME/USERNAME.github.io`，其中`USERNAME`是你的github用户名。
-1. 配置谷歌学术引用爬虫：
-    1. 在你的谷歌学术引用页面的url里找到你的谷歌学术ID：例如，在url https://scholar.google.com/citations?user=SCHOLAR_ID 中，`SCHOLAR_ID`部分即为你的谷歌学术ID。
-    1. 在github本仓库页面的`Settings -> Secrets -> Actions -> New repository secret`中，添加`GOOGLE_SCHOLAR_ID`变量：`name=GOOGLE_SCHOLAR_ID`、`value=SCHOLAR_ID`。
-    1. 在github本仓库页面的`Action`中，点击*"I understand my workflows, go ahead and enable them"*启用workflows by clicking *"。本action将会谷歌学术引用的统计量数据`gs_data.json`到本仓库的`google-scholar-stats`分支中。每次修改main分支的内容会触发该action。本action也会在每天08:00 UTC定时触发。
-1. 使用 [favicon-generator](https://redketchup.io/favicon-generator)生成favicon（网页icon文件），并下载所有文件到`REPO/images`。
-1. 修改主页配置文件[_config.yml](../_config.yml):
-    1. `title`: 主页标题
-    1. `description`: 主页的描述
-    1. `repository`: USER_NAME/REPO_NAME  
-    1. `google_analytics_id` (可选的): 谷歌Analytics ID
-    1. SEO相关的键值 (可选的): 从搜索引擎的控制台里获得对应的ID (例如：Google, Bing and Baidu)，然后粘贴到这里。
-    1. `author`: 主页作者信息，包括其他网页、Email、所在城市、大学等。
-    1. `google_scholar_stats_use_cdn`: 使用CDN读取存储于`https://raw.githubusercontent.com/`的google scholar引用统计数据，防止中国大陆地区被墙无法访问的情况。但是CDN有缓存，因此`google_scholar_stats_use_cdn : True`时，引用数据更新会有延迟。
-    1. 更多的配置信息在注释中有详细描述。
-1. 将你的主页内容添加到 [_pages/about.md](../_pages/about.md).
-1. 你的主页将会被部署到`https://USERNAME.github.io`.
+### 更轻量的前端
 
-## 本地调试
+当前页面不再依赖 jQuery、Stickyfill、Magnific Popup、FitVids 或旧导航插件。交互统一由约 1 KB 的原生 JavaScript 文件 `assets/js/site.js` 负责，减少了请求体积、运行开销和维护成本。
 
-1. 使用`git clone`将本项目克隆到本地。
-1. 安装Jekyll的构建环境，包括`Ruby`、`RubyGems`、`GCC`和`Make`。可参考[该教程](https://jekyllrb.com/docs/installation/#requirements)。
-1. 运行 `bash run_server.sh` 来启动Jekyll实时重载服务器。
-1. 在浏览器里打开 [http://127.0.0.1:4000](http://127.0.0.1:4000)。如果你修改了网页的源码，服务器会自动重新编译并刷新页面。
-1. 当你修改完毕你的页面以后, 使用`git`命令，`commit`你的改动并`push`到你的github仓库中。
+### SEO 与发布支持
 
-# Acknowledges
+- 根据页面标题和描述生成独立的 `<title>` 与 Open Graph 信息。
+- 支持 Google、Bing 和 Baidu 站点验证。
+- 支持 Jekyll Sitemap、Feed 和重定向插件。
+- 推送到 `master` 后由 GitHub Pages 自动构建和发布。
+- 可选启用 Google Scholar 引用数据自动更新。
 
-- AcadHomepage incorporates Font Awesome, which is distributed under the terms of the SIL OFL 1.1 and MIT License.
-- AcadHomepage is influenced by the github repo [mmistakes/minimal-mistakes](https://github.com/mmistakes/minimal-mistakes), which is distributed under the MIT License.
-- AcadHomepage is influenced by the github repo [academicpages/academicpages.github.io](https://github.com/academicpages/academicpages.github.io), which is distributed under the MIT License.
+## 项目结构
 
-# Supplements
+```text
+.
+├── _config.yml                 # 站点、作者、SEO 和 Jekyll 配置
+├── _data/
+│   ├── navigation.yml          # 顶部导航
+│   └── profile_links.yml       # 个人资料链接类型与图标
+├── _includes/                  # 导航、作者资料、SEO、脚本等可复用模板
+├── _layouts/default.html       # 全站页面外壳
+├── _pages/                     # 首页及各内容页面
+├── _sass/
+│   ├── _academic.scss          # 新版页面布局与内容组件
+│   ├── _masthead.scss          # 顶部导航
+│   ├── _sidebar.scss           # 个人资料侧栏
+│   └── _variables.scss         # 字体、颜色和断点变量
+├── assets/
+│   ├── css/main.scss           # Sass 入口
+│   └── js/site.js              # 原生交互脚本
+├── images/                     # 头像、favicon 和其他图片
+└── google_scholar_crawler/     # 可选的 Scholar 数据抓取脚本
+```
 
-基于原作者的模板进行了些额外的修改，主要使用的AI工具为Gemini，修改仅供参考，可按个人喜好保留。感谢RayeRen和tangjyan的分享与贡献。
+## 内容维护
+
+### 1. 修改站点和个人信息
+
+编辑 `_config.yml`：
+
+```yaml
+title: "Yuliao Gu"
+description: "Academic homepage description"
+url: "https://USERNAME.github.io"
+repository: "USERNAME/USERNAME.github.io"
+
+author:
+  name: "Your Name"
+  avatar: "/images/avatar.png"
+  bio: "Your affiliation or research area"
+  location: "City, Country"
+  email: "name@example.com"
+  github: "USERNAME"
+  researchgate: "https://www.researchgate.net/profile/..."
+```
+
+修改 `_config.yml` 后需要重新启动本地 Jekyll 服务，配置不会在运行期间自动重载。
+
+### 2. 修改首页
+
+首页内容位于 `_pages/about.md`，包含：
+
+- 顶部个人简介和联系按钮
+- About me
+- Research interests
+- Education
+
+首页使用少量语义化 HTML 配合 Markdown，以便精确控制版式。修改研究方向、学位时间或院系信息时直接编辑对应文本即可。
+
+### 3. 修改其他页面
+
+主要页面对应关系如下：
+
+| 页面 | 源文件 | 公开路径 |
+| --- | --- | --- |
+| 首页 | `_pages/about.md` | `/` |
+| Research | `_pages/research.md` | `/research/` |
+| Publications | `_pages/publications.md` | `/publications/` |
+| Honors & Awards | `_pages/awards.md` | `/awards/` |
+| Experience | `_pages/experience/experience.md` | `/experience/` |
+| Notes | `_pages/comments/comments.md` | `/comments/` |
+
+新建页面时至少需要提供 Jekyll Front Matter：
+
+```yaml
+---
+permalink: /example/
+title: "Example"
+description: "Description used by search engines and link previews."
+author_profile: true
+---
+```
+
+### 4. 修改导航
+
+编辑 `_data/navigation.yml`：
+
+```yaml
+main:
+  - title: "Research"
+    url: /research/
+  - title: "Publications"
+    url: /publications/
+```
+
+导航顺序即 YAML 中的排列顺序。首页入口由左上角姓名标识提供，因此不需要额外添加 `Home` 项。
+
+### 5. 添加个人资料链接
+
+`_data/profile_links.yml` 定义可以显示的链接类型。要启用已经定义的链接，只需在 `_config.yml` 的 `author` 下添加同名字段。例如：
+
+```yaml
+author:
+  googlescholar: "https://scholar.google.com/citations?user=SCHOLAR_ID"
+  orcid: "https://orcid.org/0000-0000-0000-0000"
+```
+
+要支持新的平台，在 `_data/profile_links.yml` 中添加配置：
+
+```yaml
+- key: linkedin
+  label: LinkedIn
+  icon: "fab fa-linkedin"
+  prefix: "https://www.linkedin.com/in/"
+```
+
+随后在 `_config.yml` 中设置 `author.linkedin`。`prefix` 可省略，此时字段值应填写完整 URL。
+
+### 6. 修改头像和图标
+
+- 将头像放入 `images/`，然后更新 `_config.yml` 中的 `author.avatar`。
+- favicon 文件位于 `images/favicon-*.png` 和 `images/favicon.ico`。
+- 推荐使用正方形头像；页面会自动裁剪为圆形。
+
+## 本地开发
+
+### 环境要求
+
+- Ruby 和 RubyGems
+- Bundler `2.3.24`（与 `Gemfile.lock` 一致）
+- GCC 与 Make（部分 Ruby gem 需要编译）
+
+首次运行：
+
+```bash
+gem install bundler -v 2.3.24
+bundle _2.3.24_ install
+bundle _2.3.24_ exec jekyll serve --livereload
+```
+
+也可以使用仓库脚本：
+
+```bash
+bash run_server.sh
+```
+
+Windows 可运行：
+
+```bat
+run_server.bat
+```
+
+服务启动后访问 <http://127.0.0.1:4000>。修改 `_config.yml` 后请停止并重新启动服务。
+
+仅执行生产构建：
+
+```bash
+JEKYLL_ENV=production bundle _2.3.24_ exec jekyll build
+```
+
+生成结果位于 `_site/`。
+
+## 发布到 GitHub Pages
+
+1. 仓库名称应为 `USERNAME.github.io`。
+2. 在 `_config.yml` 中更新 `url` 和 `repository`。
+3. 将修改提交并推送到默认发布分支：
+
+```bash
+git add <files>
+git commit -m "update homepage"
+git push origin master
+```
+
+4. 在仓库的 **Settings → Pages** 中确认发布源指向 `master`。
+5. GitHub Pages 构建完成后访问 `https://USERNAME.github.io`。
+
+## 可选：Google Scholar 引用统计
+
+仓库保留了原模板的 Scholar 抓取能力，但当前页面没有默认展示虚构引用数据。启用时：
+
+1. 从 Scholar 个人页面 URL 获取 `SCHOLAR_ID`。
+2. 在 GitHub 仓库 **Settings → Secrets and variables → Actions** 中创建 `GOOGLE_SCHOLAR_ID`。
+3. 在 **Actions** 页面启用工作流。
+4. 在 `_config.yml` 中设置作者的 `googlescholar` URL。
+5. 若需要通过 jsDelivr 读取数据，将 `google_scholar_stats_use_cdn` 设为 `true`；CDN 会带来一定缓存延迟。
+
+工作流会生成引用统计 JSON 并推送到 `google-scholar-stats` 分支。自动化依赖第三方页面结构，若 Scholar 限流或调整页面，任务可能暂时失败。
+
+## 维护约定
+
+- 内容事实优先：没有论文、奖项或经历时保留明确空状态，不使用示例成果。
+- 样式优先写入 `_sass/`，不要在 `_includes/head.html` 中添加大段内联 CSS。
+- 新的个人平台优先扩展 `_data/profile_links.yml`，不要复制整段 Liquid 条件模板。
+- 简单交互优先扩展 `assets/js/site.js`，避免重新引入大型前端运行时。
+- 提交前至少运行 `git diff --check` 和 Jekyll 构建。
+
+## 致谢与许可
+
+本项目基于 [AcadHomepage](https://github.com/RayeRen/acad-homepage.github.io)，并受到 [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes) 与 [Academic Pages](https://github.com/academicpages/academicpages.github.io) 的影响。Font Awesome 和 Academicons 分别遵循其自身许可。
+
+项目代码遵循仓库 [LICENSE](LICENSE) 中的许可条款。感谢 RayeRen、tangjyan 及相关开源项目贡献者。
