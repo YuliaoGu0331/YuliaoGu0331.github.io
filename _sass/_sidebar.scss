@@ -1,270 +1,143 @@
-/* ==========================================================================
-   SIDEBAR
-   ========================================================================== */
-
-/*
-   Default
-   ========================================================================== */
+/* Author profile */
 
 .sidebar {
-  -webkit-transform: translate3d(0, 0 , 0);
-          transform: translate3d(0, 0 , 0);
-
-  @include clearfix();
-  margin-bottom: 1em;
-
-  @include breakpoint($large) {
-    @include span(2 of 12);
-    opacity: 1;
-    -webkit-transition: opacity 0.2s ease-in-out;
-            transition: opacity 0.2s ease-in-out;
-
-    &:hover {
-      opacity: 1;
-    }
-  }
-
-
-  @include breakpoint($x-large) {
-    padding-right: 0;
-  }
-
-  h2, h3, h4, h5, h6 {
-    margin-bottom: 0;
-    font-family: $sans-serif-narrow;
-  }
-
-  h3, h4 {
-    font-size: $type-size-5;
-  }
-
-  p, li {
-    font-family: $serif;
-    font-size: $type-size-6;
-    line-height: 1.5;
-  }
-
-  img {
-    width: 100%;
-  }
+  min-width: 0;
 }
 
-.sidebar__right {
-  margin-bottom: 1em;
-
-  @include breakpoint($large) {
-    position: relative;
-    float: right;
-    width: $right-sidebar-width-narrow;
-    margin-left: span(0.5 of 12);
-    z-index: 10;
-  }
-
-  @include breakpoint($x-large) {
-    width: $right-sidebar-width;
-  }
-}
-
-/*
-   Author profile and links
-   ========================================================================== */
-.profile_box{
-  @include breakpoint($large) {
-    display: block;
-  }
-  display: flex;
-  justify-content: flex-start;
-  align-content: flex-start;
-  align-items: center;
-}
-
-.author__avatar {
-  display: table-cell;
-  vertical-align: top;
-  width: 75px;
-  // set width only, for non-square avatars
-  // height: 36px;
-
-  @include breakpoint($large) {
-    display: block;
-    width: auto;
-    height: auto;
-  }
-
-  img {
-    max-width: 175px;
-    min-width: 75px;
-    border-radius: 50%;
-
-    @include breakpoint($large) {
-      padding: 5px;
-      border: 1px solid $border-color;
-    }
-  }
-}
-
-.author__content {
-  display: table-cell;
-  vertical-align: top;
-  padding-left: 10px;
-  min-width: 120px;
-  // padding-right: 25px;
-  line-height: 1;
-
-  @include breakpoint($large) {
-    display: block;
-    width: 100%;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-.author__name {
-  margin: 0;
-
-  @include breakpoint($large) {
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-}
-
-.sidebar .author__name {
-  @include breakpoint($medium) {
-    font-size: $type-size-3;
-  }
-  font-family: $serif;
-  font-size: $type-size-4;
-}
-
-.author__bio {
-  margin: 0;
-
-  @include breakpoint($large) {
-    margin-top: 10px;
-    margin-bottom: 20px;
-  }
-}
-
-.author__urls-wrapper {
-  position: relative;
-  display: table-cell;
-  vertical-align: middle;
-  font-family: $serif;
-  z-index: 10;
-  position: relative;
-  margin-left: auto;
-  cursor: pointer;
-
-  li:last-child {
-    a {
-      margin-bottom: 0;
-    }
-  }
-
-  @include breakpoint($large) {
-    display: block;
-  }
-
-  button {
-    margin-bottom: 0;
-    width: 120px;
-    padding: 0.5em;
-    @include breakpoint($large) {
-      display: none;
-    }
-  }
-}
-
-.author__urls {
-  display: none;
-  position: absolute;
-  right: 0;
-  margin-top: 15px;
-  padding: 10px;
-  list-style-type: none;
+.profile__avatar {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center;
   border: 1px solid $border-color;
-  border-radius: $border-radius;
-  background: #fff;
-  z-index: -1;
-  box-shadow: 0 0 10px rgba(#000, 0.25);
-  cursor: default;
+  border-radius: 50%;
+}
 
-  @include breakpoint($large) {
-    display: block;
-    position: relative;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    background: transparent;
-    box-shadow: none;
+.profile__identity {
+  margin-top: 1.35rem;
+}
+
+.profile__name {
+  margin: 0;
+  color: $text-color;
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.profile__bio {
+  margin: 0.55rem 0 0;
+  color: $muted-text-color;
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.profile__location {
+  display: flex;
+  gap: 0.65rem;
+  align-items: center;
+  margin: 1.2rem 0 0;
+  color: $muted-text-color;
+  font-size: 0.85rem;
+
+  i {
+    width: 1rem;
+    color: $accent-color;
+    text-align: center;
   }
+}
 
-  &:before {
-    display: block;
-    content: "";
-    position: absolute;
-    top: -11px;
-    left: calc(50% - 10px);
-    width: 0;
-    border-style: solid;
-    border-width: 0 10px 10px;
-    border-color: $border-color transparent;
-    z-index: 0;
-
-    @include breakpoint($large) {
-      display: none;
-    }
-  }
-
-  &:after {
-    display: block;
-    content: "";
-    position: absolute;
-    top: -10px;
-    left: calc(50% - 10px);
-    width: 0;
-    border-style: solid;
-    border-width: 0 10px 10px;
-    border-color: #fff transparent;
-    z-index: 1;
-
-    @include breakpoint($large) {
-      display: none;
-    }
-  }
+.profile__links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  margin: 0.8rem 0 0;
+  padding: 0;
+  list-style: none;
 
   li {
-    white-space: nowrap;
+    margin: 0;
   }
 
   a {
-    display: block;
-    margin-bottom: 5px;
-    padding-right: 5px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    color: inherit;
-    font-size: $type-size-5;
+    display: flex;
+    gap: 0.65rem;
+    align-items: center;
+    min-height: 2rem;
+    color: $muted-text-color;
+    font-size: 0.85rem;
     text-decoration: none;
+    transition: color 160ms ease;
 
     &:hover {
-      text-decoration: underline;
+      color: $link-color;
     }
+  }
+
+  i {
+    width: 1rem;
+    color: $text-color;
+    text-align: center;
   }
 }
 
-.author__urls_sm{
-  padding: .25em;
-  font-size: 1.75em;
-  display: block;
-  a {
-    color: inherit;
-    text-decoration: none;
-    &:hover {
-      text-decoration: underline;
-    }
+@media (max-width: $large - 1px) {
+  .profile {
+    display: grid;
+    grid-template-columns: 88px minmax(0, 1fr);
+    gap: 0.4rem 1.25rem;
+    align-items: center;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid $border-color;
   }
-  @include breakpoint($large) {
-    display: none;
+
+  .profile__avatar {
+    grid-row: 1 / 3;
+  }
+
+  .profile__identity,
+  .profile__location {
+    margin: 0;
+  }
+
+  .profile__name {
+    font-size: 1.2rem;
+  }
+
+  .profile__bio {
+    margin-top: 0.3rem;
+  }
+
+  .profile__location {
+    grid-column: 2;
+  }
+
+  .profile__links {
+    grid-column: 1 / -1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.35rem 1.2rem;
+    margin-top: 0.75rem;
+  }
+}
+
+@media (max-width: $small) {
+  .profile__links a span {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  .profile__links a {
+    justify-content: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    border: 1px solid $border-color;
+    border-radius: 50%;
   }
 }

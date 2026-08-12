@@ -1,27 +1,59 @@
 ---
 permalink: /
 title: ""
-excerpt: ""
+description: "Academic homepage of Yuliao Gu, a theoretical and applied mechanics student at Fudan University."
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
 
-{% if site.google_scholar_stats_use_cdn %}
-{% assign gsDataBaseUrl = "https://cdn.jsdelivr.net/gh/" | append: site.repository | append: "@" %}
-{% else %}
-{% assign gsDataBaseUrl = "https://raw.githubusercontent.com/" | append: site.repository | append: "/" %}
-{% endif %}
-{% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
+<header class="intro">
+  <p class="intro__eyebrow">Theoretical &amp; Applied Mechanics</p>
+  <h1>Hello, I am Yuliao Gu.</h1>
+  <p class="intro__lead">I am an undergraduate student in the Department of Aeronautics and Astronautics at Fudan University, with an academic focus on solid mechanics.</p>
+  <div class="intro__actions">
+    <a class="button button--primary" href="{{ '/research/' | relative_url }}">Explore my research</a>
+    <a class="button button--secondary" href="mailto:{{ site.author.email }}">Get in touch</a>
+  </div>
+</header>
 
-# Yuliao Gu 
-I am a student, majoring in theoratical and applied mechanics, at the Department of Aeronautics and Astronautics, Fudan University.
+<section class="home-section" aria-labelledby="about-heading">
+  <div class="section-heading">
+    <p>01 / Profile</p>
+    <h2 id="about-heading">About me</h2>
+  </div>
+  <div class="section-body">
+    <p>My studies center on the mechanics of materials and structures. This website records my academic development, research interests, technical notes, and selected experiences as I continue to build a foundation in mechanics.</p>
+  </div>
+</section>
 
-My personal homepage mainly focuses on my academic career and daily life. I hope these things can help you learn more about me.
+<section class="home-section" aria-labelledby="interests-heading">
+  <div class="section-heading">
+    <p>02 / Focus</p>
+    <h2 id="interests-heading">Research interests</h2>
+  </div>
+  <div class="section-body">
+    <ul class="interest-list">
+      <li><span>01</span>Solid mechanics</li>
+      <li><span>02</span>Mechanics of materials</li>
+      <li><span>03</span>Computational methods</li>
+    </ul>
+  </div>
+</section>
 
-# Education
-B.S. (2022-2026) in Theoratical and Applied Mechanics from Fudan University
-
-
- 
+<section class="home-section" aria-labelledby="education-heading">
+  <div class="section-heading">
+    <p>03 / Background</p>
+    <h2 id="education-heading">Education</h2>
+  </div>
+  <div class="section-body">
+    <div class="timeline-entry">
+      <p class="timeline-entry__period">2022 - 2026</p>
+      <div>
+        <h3>B.S. in Theoretical and Applied Mechanics</h3>
+        <p>Fudan University · Department of Aeronautics and Astronautics</p>
+      </div>
+    </div>
+  </div>
+</section>

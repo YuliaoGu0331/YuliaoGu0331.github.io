@@ -7,7 +7,8 @@
 
 # Site Settings
 title                    : "Yuliao Gu"
-description              : "Solid Mechanics"
+description              : "Yuliao Gu's academic homepage: solid mechanics, research interests, and academic notes."
+url                      : "https://yuliaogu0331.github.io"
 repository               : "YuliaoGu0331/YuliaoGu0331.github.io"
 google_scholar_stats_use_cdn : false
 
@@ -23,40 +24,11 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Yuliao Gu"
   avatar           : "/images/android-chrome-512x512.png"
-  bio              : "Department of Aeronautics and Astronautics, Fudan University."
+  bio              : "Theoretical and Applied Mechanics at Fudan University"
   location         : "Shanghai, China"
-  employer         : #"Hefei General Machinery Research Institute"
-  pubmed           : 
-  googlescholar    : 
   email            : "22300290023@m.fudan.edu.cn"
   researchgate     : "https://www.researchgate.net/profile/Yuliao-Gu?ev=hdr_xprf"
-  uri              : 
-  bitbucket        :
-  codepen          :
-  dribbble         :
-  flickr           :
-  facebook         :
-  foursquare       :
   github           : "YuliaoGu0331"
-  google_plus      :
-  keybase          :
-  instagram        :
-  impactstory      : # e.g., "https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
-  lastfm           :
-  linkedin         : # e.g., "linkedin username"
-  dblp             : # e.g., "https://dblp.org/pid/xx/xxxx.html"
-  orcid            : 
-  pinterest        :
-  soundcloud       :
-  stackoverflow    : # http://stackoverflow.com/users/123456/username
-  steam            :
-  tumblr           :
-  twitter          : 
-  vine             :
-  weibo            :
-  xing             :
-  youtube          :
-  wikipedia        :
 
 
 # Reading Files
@@ -81,9 +53,6 @@ exclude:
   - LICENSE
   - README
   - Rakefile
-  - assets/js/_main.js
-  - assets/js/plugins
-  - assets/js/vendor
   - config
   - gulpfile.js
   - log

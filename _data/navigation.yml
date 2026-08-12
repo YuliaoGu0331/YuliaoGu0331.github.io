@@ -1,13 +1,11 @@
 main:
-  - title: "Homepage"
-    url: /
   - title: "Research"        # 新增专属的研究页面，对标张寅老师的结构
     url: /research/
   - title: "Publications"
     url: /publications/
-  - title: "Honors And Awards"
+  - title: "Honors & Awards"
     url: /awards/
   - title: "Experience"      # 将学术会议和工作实习整合到这里
     url: /experience/
-  - title: "Comments"
+  - title: "Notes"
     url: /comments/

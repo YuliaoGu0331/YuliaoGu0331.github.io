@@ -1,20 +1,20 @@
 ---
-layout: compress
+layout: null
 ---
 
 <!doctype html>
-<html lang="{{ page.lang | default: 'zh-CN' }}" class="no-js">
+<html lang="{{ page.lang | default: 'en' }}" class="no-js">
   <head>
     {% include head.html %}
     {% include head/custom.html %}
   </head>
 
-  <body>
+  <body class="{% if page.permalink == '/' %}home{% endif %}">
 
     {% include browser-upgrade.html %}
     {% include masthead.html %}
 
-    <div id="main" role="main">
+    <main id="main">
       {% include sidebar.html %}
     
       <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
@@ -25,16 +25,13 @@ layout: compress
           </section>
         </div>
       </article>
-    </div>
+    </main>
 
     {% include scripts.html %}
 
-<div class="footer_site">
-<hr/>
-<div class="footer_copyright">
-  Copyright © 2026 Yuliao Gu. All rights reserved. | Based on &nbsp
-  <a class="page_a"  href="https://github.com/RayeRen/acad-homepage.github.io">
-  acad
-  </a>&nbsp
-</div>
-</div>
+    <footer class="site-footer">
+      <p>&copy; {{ 'now' | date: '%Y' }} {{ site.author.name }}.</p>
+      <p>Built with <a href="https://jekyllrb.com/">Jekyll</a> and based on <a href="https://github.com/RayeRen/acad-homepage.github.io">AcadHomepage</a>.</p>
+    </footer>
+  </body>
+</html>

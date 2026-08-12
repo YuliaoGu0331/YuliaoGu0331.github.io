@@ -1,0 +1,21 @@
+- key: email
+  label: Email
+  icon: "fas fa-envelope"
+  prefix: "mailto:"
+
+- key: github
+  label: GitHub
+  icon: "fab fa-github"
+  prefix: "https://github.com/"
+
+- key: researchgate
+  label: ResearchGate
+  icon: "fab fa-researchgate"
+
+- key: googlescholar
+  label: Google Scholar
+  icon: "fas fa-graduation-cap"
+
+- key: orcid
+  label: ORCID
+  icon: "ai ai-orcid"
