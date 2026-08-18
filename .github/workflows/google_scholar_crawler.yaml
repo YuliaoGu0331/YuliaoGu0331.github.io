@@ -1,7 +1,6 @@
 name: Get Citation Data
 
-on: 
- page_build: 
+on:
  schedule:
   - cron:  '0 8 * * *'
  workflow_dispatch:
@@ -10,6 +9,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
     - uses: actions/checkout@v2
     - name: Install Reqs
