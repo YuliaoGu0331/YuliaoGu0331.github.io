@@ -278,9 +278,17 @@ a {
   border-bottom: 1px solid $border-color;
 }
 
+.list__item .archive__item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  align-items: flex-start;
+}
+
 .page__content .archive__item-title {
-  margin: 0 0 0.35rem;
+  margin: 0;
   font-size: 1.1rem;
+  line-height: 1.35;
 }
 
 .archive__item p,
@@ -289,14 +297,25 @@ a {
 }
 
 .entry-meta {
-  margin: 0 0 0.65rem;
+  margin: 0;
   color: $muted-text-color;
   font-size: 0.76rem;
+  line-height: 1.45;
   letter-spacing: 0.02em;
 }
 
 .page__content .entry-meta {
+  margin: -0.8rem 0 1.9rem;
   color: $muted-text-color;
+}
+
+.list__item .entry-meta {
+  margin: 0;
+}
+
+.list__item .archive__item > p:not(.entry-meta) {
+  margin: 0;
+  line-height: 1.55;
 }
 
 .custom-code-box {
