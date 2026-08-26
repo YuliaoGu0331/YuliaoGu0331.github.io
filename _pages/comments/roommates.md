@@ -1,20 +1,22 @@
 ---
 permalink: /comments/roommates
-title: "Some opinions about my roommates in FDU"
+title: "Reflections on Shared Living at Fudan"
+description: "A personal reflection on communication, boundaries, and shared living during my undergraduate years at Fudan University."
 author_profile: true
 ---
-# Statement
 
-I don't want to attack all the people concerned. So I put such statement here to avoid some misunderstandings. I hope you are not the one I mentioned.
+# Reflections on Shared Living at Fudan
 
-# Maintext
+Living with roommates was an important part of my undergraduate experience at Fudan University. Sharing a small space made me more aware of how differently people communicate, manage boundaries, and respond to conflict.
 
-I feel really angry about one of my roommates. One interesting fact is that if you start or try to be familiar with someone, it will always be a bad ending. When you are strangers, silence and respect is kept well because you don't konw each other and don't want to make conflicts. But when things change, you get more familiar with each other, one of you maybe break the bottom line frequently without consciousness. It is probably some dirty words or some sarcastic tricks. Anyway, in conflicts, the one who is relatively good-tempered will lose the game and only keep the disgust feeling under heart.
+At times, I found it difficult to address behavior that made me uncomfortable. When people become familiar with one another, they may speak or act more casually, sometimes without realizing that they have crossed someone else's boundaries. Avoiding the conversation can preserve peace temporarily, but it can also allow frustration to accumulate.
 
-I don't want to say I have not made mistakes. I just want to say you never realize you own mistakes and you just make others take the responsbility which you should take a part of. 
+Looking back, I believe that mutual respect requires both sides to communicate clearly, acknowledge their own mistakes, and take responsibility for how their actions affect others. It is also important to address disagreements directly and privately instead of turning them into public accusations.
 
-There is going to be short time from now to the graduate time. I will try my best to avoid communications with you. The reason why you were kicked out of your former room is clear. Although I don't know the whole thing, it is sure that you shouldn't have post bad words on the Internet behind someone's back.
+## A later reflection
 
-Hope you will keep the way you treat others until the day you encounter the really big problem.
+The original version of this note was written while I was angry and used language that was too personal and extreme. Although the underlying conflict was real to me, it was unfair to reduce another person to the worst moments of our relationship. We were still able to be friends in other respects, and I should have expressed my concerns with greater restraint and empathy.
 
-Update time: 2026-6-5
+This experience taught me that setting boundaries and reflecting on my own reactions are equally important. I hope to carry that lesson into future shared spaces and relationships.
+
+*Originally written during my undergraduate years; revised in August 2026.*

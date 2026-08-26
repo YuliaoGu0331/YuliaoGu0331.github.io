@@ -227,6 +227,16 @@ a {
   gap: 1.5rem;
 }
 
+.timeline-entry + .timeline-entry {
+  margin-top: 1.6rem;
+  padding-top: 1.6rem;
+  border-top: 1px solid $border-color;
+}
+
+.home-section .note-block {
+  margin-top: 0;
+}
+
 .page__content .timeline-entry__period {
   color: $accent-color;
   font-size: 0.82rem;

@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Yuliao Gu"
-description              : "Yuliao Gu's academic homepage: solid mechanics, research interests, and academic notes."
+description              : "Yuliao Gu's academic homepage: doctoral study in mechanics, academic development, and personal notes."
 url                      : "https://yuliaogu0331.github.io"
 repository               : "YuliaoGu0331/YuliaoGu0331.github.io"
 google_scholar_stats_use_cdn : false
@@ -24,8 +24,8 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Yuliao Gu"
   avatar           : "/images/android-chrome-512x512.png"
-  bio              : "Theoretical and Applied Mechanics at Fudan University"
-  location         : "Shanghai, China"
+  bio              : "Ph.D. Student in Mechanics at Peking University"
+  location         : "Beijing, China"
   email            : "22300290023@m.fudan.edu.cn"
   researchgate     : "https://www.researchgate.net/profile/Yuliao-Gu?ev=hdr_xprf"
   github           : "YuliaoGu0331"

@@ -1,7 +1,7 @@
 ---
 permalink: /
 title: ""
-description: "Academic homepage of Yuliao Gu, a theoretical and applied mechanics student at Fudan University."
+description: "Academic homepage of Yuliao Gu, a Ph.D. student in mechanics at Peking University."
 author_profile: true
 redirect_from:
   - /about/
@@ -9,11 +9,11 @@ redirect_from:
 ---
 
 <header class="intro">
-  <p class="intro__eyebrow">Theoretical &amp; Applied Mechanics</p>
+  <p class="intro__eyebrow">Mechanics · Ph.D. Student</p>
   <h1>Hello, I am Yuliao Gu.</h1>
-  <p class="intro__lead">I am an undergraduate student in the Department of Aeronautics and Astronautics at Fudan University, with an academic focus on solid mechanics.</p>
+  <p class="intro__lead">I am a Ph.D. student at the School of Mechanics and Engineering Science, Peking University. I previously studied theoretical and applied mechanics at Fudan University.</p>
   <div class="intro__actions">
-    <a class="button button--primary" href="{{ '/research/' | relative_url }}">Explore my research</a>
+    <a class="button button--primary" href="{{ '/research/' | relative_url }}">View research status</a>
     <a class="button button--secondary" href="mailto:{{ site.author.email }}">Get in touch</a>
   </div>
 </header>
@@ -24,7 +24,7 @@ redirect_from:
     <h2 id="about-heading">About me</h2>
   </div>
   <div class="section-body">
-    <p>My studies center on the mechanics of materials and structures. This website records my academic development, research interests, technical notes, and selected experiences as I continue to build a foundation in mechanics.</p>
+    <p>I am currently at the beginning of my doctoral studies and exploring possible research directions within mechanics. This website documents my academic development, technical notes, and selected experiences.</p>
   </div>
 </section>
 
@@ -34,11 +34,10 @@ redirect_from:
     <h2 id="interests-heading">Research interests</h2>
   </div>
   <div class="section-body">
-    <ul class="interest-list">
-      <li><span>01</span>Solid mechanics</li>
-      <li><span>02</span>Mechanics of materials</li>
-      <li><span>03</span>Computational methods</li>
-    </ul>
+    <div class="note-block">
+      <p class="note-block__label">In exploration</p>
+      <p>My specific research interests have not yet been finalized. I will update this section as my doctoral research develops.</p>
+    </div>
   </div>
 </section>
 
@@ -48,6 +47,13 @@ redirect_from:
     <h2 id="education-heading">Education</h2>
   </div>
   <div class="section-body">
+    <div class="timeline-entry">
+      <p class="timeline-entry__period">2026 - Present</p>
+      <div>
+        <h3>Ph.D. Student in Mechanics</h3>
+        <p>Peking University · School of Mechanics and Engineering Science</p>
+      </div>
+    </div>
     <div class="timeline-entry">
       <p class="timeline-entry__period">2022 - 2026</p>
       <div>
