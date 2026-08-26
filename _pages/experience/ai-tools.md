@@ -1,10 +1,14 @@
 ---
 permalink: /experience/ai-tools
 title: "AI Tools"
+date: 2026-05-21
 author_profile: true
 ---
 
 # AI Tools: A short introduction
+
+{% include published-date.html date=page.date %}
+
 ## MCP Servers
 
 **MCP (Model Context Protocol)** servers act as bridges between Claude Code and external data sources or tools. They allow the AI to securely access local files, query databases, browse the web, and interact with development environments in real time. MCP servers standardize how context is exchanged, making it easier to connect Claude Code to custom internal tools or third-party APIs without writing complex integration code. The following are the servers included:

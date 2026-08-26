@@ -1,0 +1,9 @@
+{% if include.date %}
+  <p class="entry-meta">
+    <time datetime="{{ include.date | date_to_xmlschema }}">Published {{ include.date | date: "%B %-d, %Y" }}</time>
+    {% if include.updated %}
+      <span aria-hidden="true"> · </span>
+      <time datetime="{{ include.updated | date_to_xmlschema }}">Updated {{ include.updated | date: "%B %-d, %Y" }}</time>
+    {% endif %}
+  </p>
+{% endif %}

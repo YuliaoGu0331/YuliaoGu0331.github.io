@@ -2,10 +2,14 @@
 permalink: /comments/roommates
 title: "Reflections on Shared Living at Fudan"
 description: "A personal reflection on communication, boundaries, and shared living during my undergraduate years at Fudan University."
+date: 2026-06-05
+last_modified_at: 2026-08-26
 author_profile: true
 ---
 
 # Reflections on Shared Living at Fudan
+
+{% include published-date.html date=page.date updated=page.last_modified_at %}
 
 Living with roommates was an important part of my undergraduate experience at Fudan University. Sharing a small space made me more aware of how differently people communicate, manage boundaries, and respond to conflict.
 

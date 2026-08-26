@@ -288,6 +288,17 @@ a {
   font-size: 0.92rem;
 }
 
+.entry-meta {
+  margin: 0 0 0.65rem;
+  color: $muted-text-color;
+  font-size: 0.76rem;
+  letter-spacing: 0.02em;
+}
+
+.page__content .entry-meta {
+  color: $muted-text-color;
+}
+
 .custom-code-box {
   position: relative;
   margin: 1.2rem 0;

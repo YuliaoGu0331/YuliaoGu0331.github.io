@@ -122,6 +122,30 @@ author_profile: true
 ---
 ```
 
+所有可公开访问的条目（包括 publications、honors、experience 和 notes）都应同时提供发布日期：
+
+```yaml
+date: 2026-08-26
+last_modified_at: 2026-08-26 # 可选：页面后续有实质更新时填写
+```
+
+日期统一使用 ISO 格式 `YYYY-MM-DD` 保存，页面显示统一由 `_includes/published-date.html` 渲染为 `Published Month D, YYYY`。`date` 表示首次发布日，不因普通文字修订而改变；有重要更新时才添加或更新 `last_modified_at`。索引页中的条目也必须显示相同的发布日期格式。
+
+新增 publication 或 honors 条目时，可使用以下结构：
+
+```yaml
+---
+permalink: /publications/example/
+title: "Example publication"
+date: 2026-08-26
+author_profile: true
+---
+
+# Example publication
+
+{% include published-date.html date=page.date %}
+```
+
 ### 4. 修改导航
 
 编辑 `_data/navigation.yml`：
