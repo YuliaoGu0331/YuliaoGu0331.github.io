@@ -11,6 +11,16 @@ Informal writing and personal reflections beyond my academic work.
 <div class="list__item">
   <article class="archive__item">
     <h2 class="archive__item-title">
+      <a href="{{ '/comments/phd-in-pku-1' | relative_url }}">[Ph.D. in PKU]-1</a>
+    </h2>
+    {% include published-date.html date="2026-08-30" %}
+    <p>The final day of summer break, the journey north, and the quiet eve of doctoral registration at Peking University.</p>
+  </article>
+</div>
+
+<div class="list__item">
+  <article class="archive__item">
+    <h2 class="archive__item-title">
       <a href="{{ '/comments/roommates' | relative_url }}">Reflections on Shared Living at Fudan</a>
     </h2>
     {% include published-date.html date="2026-06-05" updated="2026-08-26" %}

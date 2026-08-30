@@ -336,6 +336,24 @@ h6 {
   line-height: 1.55;
 }
 
+.bilingual-passage {
+  margin-bottom: 1.9rem;
+}
+
+.page__content .bilingual-passage p {
+  margin: 0;
+  line-height: 1.8;
+  text-indent: 0;
+}
+
+.page__content .bilingual-passage p[lang="en"] {
+  margin-top: 0.8rem;
+  padding-left: 1rem;
+  color: $muted-text-color;
+  border-left: 2px solid $border-color;
+  font-size: 0.96em;
+}
+
 .custom-code-box {
   position: relative;
   margin: 1.2rem 0;
