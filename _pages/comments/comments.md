@@ -11,6 +11,16 @@ Informal writing and personal reflections beyond my academic work.
 <div class="list__item">
   <article class="archive__item">
     <h2 class="archive__item-title">
+      <a href="{{ '/comments/phd-in-pku-5' | relative_url }}">[Ph.D. in PKU]-5</a>
+    </h2>
+    {% include published-date.html date="2026-10-02" %}
+    <p>Finding a steadier rhythm in research and daily life, with scenes from the Mid-Autumn and National Day holidays.</p>
+  </article>
+</div>
+
+<div class="list__item">
+  <article class="archive__item">
+    <h2 class="archive__item-title">
       <a href="{{ '/comments/phd-in-pku-4' | relative_url }}">[Ph.D. in PKU]-4</a>
     </h2>
     {% include published-date.html date="2026-09-04" %}
