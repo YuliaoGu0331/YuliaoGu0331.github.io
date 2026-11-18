@@ -11,6 +11,16 @@ Informal writing and personal reflections beyond my academic work.
 <div class="list__item">
   <article class="archive__item">
     <h2 class="archive__item-title">
+      <a href="{{ '/comments/continuum' | relative_url }}">Reflections on Fundamentals of Continuum Mechanics</a>
+    </h2>
+    {% include published-date.html date="2026-11-18" %}
+    <p>Reflections on mathematical intuition, self-study, and research plans after reading Huang Zhuping's book.</p>
+  </article>
+</div>
+
+<div class="list__item">
+  <article class="archive__item">
+    <h2 class="archive__item-title">
       <a href="{{ '/comments/phd-in-pku-5' | relative_url }}">[Ph.D. in PKU]-5</a>
     </h2>
     {% include published-date.html date="2026-10-02" %}
